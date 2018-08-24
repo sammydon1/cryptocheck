@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cryptocheck</string>
+    <string name="ether">Ethereum</string>
+    <string name="btc">Bitcoin</string>
+    <string name="add">ADD</string>
+    <string name="back">BACK</string>
+    <string name="intro">This application allows you to check crytocurrency rates. To check crypto rates,Select a country currency,choose a cryptcoin and click the add button. </string>
+    <string-array name="currencies">
+        <item>EUR</item>
+        <item>PND</item>
+        <item>NGN</item>
+        <item>GHS</item>
+        <item>QAR</item>
+        <item>JPY</item>
+        <item>INR</item>
+        <item>USD</item>
+        <item>ARS</item>
+        <item>BRL</item>
+        <item>AUD</item>
+    </string-array>
+</resources>

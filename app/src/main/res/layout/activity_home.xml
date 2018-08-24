@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nwokedisamuel.cryptocheck.HomeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@mipmap/money_mkt"
+        >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/intro"
+             android:layout_marginTop="10dp"
+             android:textSize="16sp"
+             android:textColor="@color/white"
+             android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+       <RadioButton
+           android:id="@+id/bitcoin"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="@string/btc"
+           android:textColor="@color/white"
+           android:textSize="25sp"
+           android:onClick="crypt"
+           android:checked="true"
+           tools:ignore="OnClick" />
+       <RadioButton
+           android:id="@+id/ether"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="@string/ether"
+           android:textSize="25sp"
+           android:onClick="crypt"
+           android:textColor="@color/white"
+           tools:ignore="OnClick"/>
+   </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/add"
+            android:textSize="20sp"
+            android:onClick="addCard"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_below="@id/view2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"/>
+
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:layout_below="@id/view2"
+          android:layout_marginLeft="25dp"
+          android:layout_marginTop="25dp"
+          android:background="@color/colorAccent"
+          android:padding="5dp"
+          >
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        </Spinner>
+      </RelativeLayout>
+
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rcv"
+    android:layout_below="@id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</android.support.v7.widget.RecyclerView>
+
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:progressBarStyle"
+    android:visibility="invisible"
+    android:layout_below="@id/rcv"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</RelativeLayout>

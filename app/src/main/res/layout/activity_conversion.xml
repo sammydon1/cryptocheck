@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ash"
+    android:layout_height="match_parent"
+    tools:context="com.example.nwokedisamuel.cryptocheck.conversionActivity">
+
+
+<android.support.v7.widget.CardView
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_centerInParent="true"
+    app:cardBackgroundColor="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="80dp" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_below="@id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:text="is your base currency"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:layout_centerHorizontal="true"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="250dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:hint="ENTER NUMERIC VALUES"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_height="50dp"
+            android:layout_below="@id/textview"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:onClick="back"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_below="@+id/edittext"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/back"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
